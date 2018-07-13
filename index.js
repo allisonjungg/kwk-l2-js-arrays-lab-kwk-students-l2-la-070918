@@ -12,7 +12,7 @@ function destructivelyRemoveLastDriver(){
 function destructivelyRemoveFirstDriver(){
   drivers.shift()
 }
-function appendDriverName(){
+function appendDriverName(name){
   var clone = drivers.slice(0)
   clone.push(name)
 }
