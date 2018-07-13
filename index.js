@@ -1,10 +1,10 @@
 // Write your solution here!
 const drivers = ["Milo", "Otis", "Garfield"]
-function destructivelyAppendDriver(){
-  drivers.push()
+function destructivelyAppendDriver(name){
+  drivers.push(name)
 }
-function destructivelyPrependDriver(){
-  drivers.unshift()
+function destructivelyPrependDriver(name){
+  drivers.unshift(name)
 }
 function destructivelyRemoveLastDriver(){
   drivers.pop()
@@ -12,8 +12,8 @@ function destructivelyRemoveLastDriver(){
 function destructivelyRemoveFirstDriver(){
   drivers.shift()
 }
-function appendDriverName(name){
+function appendDriverName(n){
   var clone = drivers.slice(0)
-  clone.push(name)
+  clone.push(n)
   return clone
 }
