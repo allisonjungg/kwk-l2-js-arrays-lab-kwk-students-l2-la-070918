@@ -7,5 +7,5 @@ function destructivelyPrependDriver(name){
   drivers.unshift(name)
 }
 function destructivelyPreprendDriver(){
-  
+  drivers.pop()
 }
