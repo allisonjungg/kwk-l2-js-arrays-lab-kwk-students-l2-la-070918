@@ -1,16 +1,19 @@
 // Write your solution here!
-function prependDriver (name){
- var clone = drivers.slice(0)
- clone.unshift(name)
- return clone
+const drivers = ["Milo", "Otis", "Garfield"]
+function destructivelyAppendDriver(){
+  drivers.push("Ralph")
 }
-function removeLastDriver (){
- var clone = drivers.slice(0)
- clone.splice(-1,1)
- return clone
+function destructivelyPrependDriver(){
+  drivers.unshift("Ralph")
 }
-function removeFirstDriver (){
- var clone = drivers.slice(0)
- clone.shift(0)
- return clone
+function destructivelyRemoveLastDriver(){
+  drivers.pop()
+}
+function destructivelyRemoveFirstDriver(){
+  drivers.shift()
+}
+function appendDriverName(name){
+  var clone = drivers.slice(0)
+  clone.push(name)
+  return clone
 }
